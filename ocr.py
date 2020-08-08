@@ -93,7 +93,7 @@ crnn_net = LiteCrnn(32, 1, len(alphabet) + 1, nh, n_rnn=2, leakyRelu=False, lstm
 crnn_handle = CRNNHandle(crnn_model_path, crnn_net)
 
 if __name__ == '__main__':
-    img = './test/test.png'
+    img = './test/test.jpg'
     img = Image.open(img).convert('RGB')
     #img.show()
     img = np.array(img)
